@@ -8,3 +8,10 @@ setInterval(function() {
         .end()
         .appendTo('#slideshow');
 }, 3000);
+
+document.querySelector(".burger_menu").addEventListener("click", function (e){
+        this.classList.toggle("active");
+        document.querySelector(".menu").classList.toggle("show")
+    }
+
+);
